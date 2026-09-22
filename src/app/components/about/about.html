@@ -1,0 +1,211 @@
+<section
+  id="about"
+  class="min-h-screen bg-[#f3f3f3] px-10 md:px-20 py-24">
+
+  <!-- TOP SECTION -->
+  <div class="flex flex-col md:flex-row items-center justify-between gap-16">
+
+<!-- LEFT IMAGE -->
+<div class="flex-1 flex justify-center">
+
+  <div class="relative">
+
+    <!-- BLUE SHADOW SA LIKOD -->
+    <div
+      class="absolute
+          inset-2
+         bg-indigo-500/25
+         blur-3xl
+         rounded-full">
+    </div>
+    
+    <img
+      [src]="aboutImages[currentImage]"
+      alt="About"
+      (click)="nextImage()"
+      class="w-65 md:w-[320px]
+             relative z-10
+             cursor-pointer
+             rounded-2xl
+             drop-shadow-2xl
+             transition-all duration-500
+             hover:scale-105">
+
+    <!-- Shadow sa ilalim -->
+    <div
+      class="absolute
+             bottom-0
+             left-1/2
+             -translate-x-1/2
+             w-52
+             h-8
+             bg-black/20
+             blur-lg
+             rounded-full">
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="flex-1">
+
+      <h2
+        class="text-5xl md:text-6xl font-extrabold text-black
+               font-['Lalezar']
+               [text-shadow:0_5px_8px_rgba(0,0,0,0.25)]">
+        ABOUT ME
+      </h2>
+
+      <p class="mt-8 text-lg md:text-1xl text-gray-600 leading-relaxed max-w-xl">
+        I'm a passionate UI/UX Designer and Frontend Developer focused on creating clean, responsive, and user-friendly websites. I enjoy designing intuitive interfaces and building modern web applications while continuously learning and improving my skills.
+      </p>
+
+      <button
+        class="mt-8 bg-indigo-500 hover:bg-indigo-600
+               text-white font-semibold
+               px-8 py-3 rounded-xl
+               shadow-[0_5px_12px_rgba(99,102,241,0.45)]
+               transition-all duration-300">
+        Contact Me
+      </button>
+
+      <!-- SOCIAL ICONS -->
+      <div class="flex gap-5 mt-8 text-5xl">
+
+        <a href="https://facebook.com" target="_blank">
+          <i class="bx bxl-facebook-square hover:text-blue-600 transition hover:scale-110"></i>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank">
+          <i class="bx bxl-linkedin-square hover:text-blue-700 transition hover:scale-110"></i>
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+          <i class="bx bxl-instagram-alt hover:text-pink-500 transition hover:scale-110"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- WHAT CAN I DO -->
+  <div class="mt-24">
+
+    <h3
+      class="text-center text-4xl font-bold text-indigo-500">
+      What Can I Do?
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-14 max-w-7xl mx-auto px-6">
+
+      <!-- Card 1 -->
+      <div
+  class="group bg-white rounded-[30px]
+         border border-gray-200
+         p-10 text-center
+         shadow-lg
+         transition-all duration-500 ease-in-out
+         hover:-translate-y-4
+         hover:scale-105
+         hover:border-indigo-500
+         hover:shadow-[0_20px_40px_rgba(99,102,241,0.35)]">
+
+  <i
+    class="bx bx-palette text-5xl text-indigo-500
+           transition-all duration-500
+           group-hover:scale-125
+           group-hover:rotate-6
+           group-hover:drop-shadow-[0_0_15px_rgba(99,102,241,0.8)]">
+  </i>
+
+  <h4
+    class="font-regular text-xl mt-6
+           transition-colors duration-300
+           group-hover:text-indigo-500">
+    UI/UX Design
+  </h4>
+
+  <p class="text-gray-500 mt-4 leading-7">
+    Creating intuitive, modern, and user-centered interfaces
+    that provide the best user experience.
+  </p>
+
+</div>
+
+      <!-- Card 2 -->
+      <div
+  class="group bg-white rounded-[30px]
+         border border-gray-200
+         p-10 text-center
+         shadow-lg
+         transition-all duration-500 ease-in-out
+         hover:-translate-y-4
+         hover:scale-105
+         hover:border-indigo-500
+         hover:shadow-[0_20px_40px_rgba(99,102,241,0.35)]">
+
+  <i
+    class="bx bx-code-alt text-5xl text-indigo-500
+           transition-all duration-500
+           group-hover:scale-125
+           group-hover:rotate-6
+           group-hover:drop-shadow-[0_0_15px_rgba(99,102,241,0.8)]">
+  </i>
+
+  <h4
+    class="font-regular text-xl mt-6
+           transition-colors duration-300
+           group-hover:text-indigo-500">
+    Web Development
+  </h4>
+
+  <p class="text-gray-500 mt-4 leading-7">
+    Developing responsive and high-performance websites
+    using modern web technologies.
+  </p>
+
+</div>
+
+      <!-- Card 3 -->
+      <div
+  class="group bg-white rounded-[30px]
+         border border-gray-200
+         p-10 text-center
+         shadow-lg
+         transition-all duration-500 ease-in-out
+         hover:-translate-y-4
+         hover:scale-105
+         hover:border-indigo-500
+         hover:shadow-[0_20px_40px_rgba(99,102,241,0.35)]">
+
+  <i
+    class="bx bx-brush text-5xl text-indigo-500
+           transition-all duration-500
+           group-hover:scale-125
+           group-hover:rotate-6
+           group-hover:drop-shadow-[0_0_15px_rgba(99,102,241,0.8)]">
+  </i>
+
+  <h4
+    class="font-regular text-xl mt-6
+           transition-colors duration-300
+           group-hover:text-indigo-500">
+    Graphic Design
+  </h4>
+
+  <p class="text-gray-500 mt-4 leading-7">
+    Designing creative visuals for branding,
+    marketing, and digital content.
+  </p>
+
+</div>
+
+    </div>
+
+  </div>
+
+</section>

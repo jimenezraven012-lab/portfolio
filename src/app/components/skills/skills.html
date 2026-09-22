@@ -1,0 +1,147 @@
+<section
+  id="skills"
+  class="min-h-screen bg-white px-10 md:px-20 py-24">
+
+  <!-- TITLE -->
+  <div class="text-center">
+
+    <h2
+      class="text-5xl md:text-5xl font-extrabold
+             font-['Lalezar']
+             text-black
+             [text-shadow:0_5px_8px_rgba(0,0,0,0.25)]">
+      My Skills
+    </h2>
+
+    <div class="w-20 h-1 bg-indigo-500 rounded-full mx-auto mt-1"></div>
+
+  </div>
+
+  <!-- CATEGORY -->
+  <div class="flex justify-center gap-10 mt-12 font-regular">
+
+  <button
+    (click)="show('all')"
+    [class.text-indigo-500]="selectedCategory=='all'"
+    [class.border-b-2]="selectedCategory=='all'"
+    class="pb-1 hover:text-indigo-500 transition-all">
+    ALL
+  </button>
+
+  <button
+    (click)="show('tech')"
+    [class.text-indigo-500]="selectedCategory=='tech'"
+    [class.border-b-2]="selectedCategory=='tech'"
+    class="pb-1 hover:text-indigo-500 transition-all">
+    Tech Stack
+  </button>
+
+  <button
+    (click)="show('design')"
+    [class.text-indigo-500]="selectedCategory=='design'"
+    [class.border-b-2]="selectedCategory=='design'"
+    class="pb-1 hover:text-indigo-500 transition-all">
+    Design Tool
+  </button>
+
+</div>
+
+  <!-- SKILLS GRID -->
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-16 px-6">
+
+    <!-- FIGMA -->
+    <div
+        *ngIf="selectedCategory=='all' || selectedCategory=='design'"
+        class="group bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300">
+
+      <img src="Figma.png"
+           class="w-16 h-16 mx-auto group-hover:scale-110 transition duration-300">
+
+      <h3 class="mt-5 font-regular">
+        Figma
+      </h3>
+
+    </div>
+
+    <!-- CANVA -->
+    <div
+        *ngIf="selectedCategory=='all' || selectedCategory=='design'"
+        class="group bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300">
+
+      <img src="Canva.webp"
+           class="w-16 h-16 mx-auto group-hover:scale-110 transition duration-300">
+
+      <h3 class="mt-5 font-regular">
+        Canva
+      </h3>
+
+    </div>
+
+    <!-- PHOTOSHOP -->
+    <div
+        *ngIf="selectedCategory=='all' || selectedCategory=='design' "class="group bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300">
+
+      <img src="Photoshop.webp"
+           class="w-16 h-16 mx-auto group-hover:scale-110 transition duration-300">
+
+      <h3 class="mt-5 font-regular">
+        Photoshop
+      </h3>
+
+    </div>
+
+    <!-- HTML -->
+    <div
+        *ngIf="selectedCategory=='all' || selectedCategory=='tech' "class="group bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300">
+
+      <img src="HTML.png"
+           class="w-16 h-16 mx-auto group-hover:scale-110 transition duration-300">
+
+      <h3 class="mt-5 font-regular">
+        HTML
+      </h3>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <div
+        *ngIf="selectedCategory=='all' || selectedCategory=='tech' "class="group bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300">
+
+      <img src="JavaScript.webp"
+           class="w-16 h-16 mx-auto group-hover:scale-110 transition duration-300">
+
+      <h3 class="mt-5 font-regular">
+        JavaScript
+      </h3>
+
+    </div>
+
+    <!-- ANGULAR -->
+    <div
+        *ngIf="selectedCategory=='all' || selectedCategory=='tech' "class="group bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300">
+
+      <img src="Angular.webp"
+           class="w-16 h-16 mx-auto group-hover:scale-110 transition duration-300">
+
+      <h3 class="mt-5 font-regular">
+        Angular
+      </h3>
+
+    </div>
+
+    <!-- TAILWIND -->
+    <div
+        *ngIf="selectedCategory=='all' || selectedCategory=='tech' "class="group bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300">
+
+      <img src="Tailwindcss.png"
+           class="w-16 h-16 mx-auto group-hover:scale-110 transition duration-300">
+
+      <h3 class="mt-5 font-regular">
+        TailwindCSS
+      </h3>
+
+    </div>
+
+  </div>
+
+</section>

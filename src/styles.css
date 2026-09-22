@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'boxicons/css/boxicons.min.css';
+@import "tailwindcss";
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #6b7280;
+
+  animation:
+    typing 3s steps(20, end) infinite alternate,
+    blink .8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  background-color: #111827;
+  color: white;
+}
+
+/* White backgrounds */
+html.dark .bg-white {
+  background-color: #111827 !important;
+}
+
+/* About background */
+html.dark .bg-\[\#f3f3f3\] {
+  background-color: #1f2937 !important;
+}
+
+/* Black text */
+html.dark .text-black {
+  color: white !important;
+}
+
+/* Gray text */
+html.dark .text-gray-500 {
+  color: #d1d5db !important;
+}
+
+html.dark .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+/* White cards */
+html.dark .bg-gray-100 {
+  background-color: #374151 !important;
+}
+
+/* Smooth transition */
+body {
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}

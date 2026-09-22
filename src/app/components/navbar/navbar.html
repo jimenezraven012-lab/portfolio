@@ -1,0 +1,135 @@
+<nav
+  class="fixed top-0 left-0 w-full z-50
+         flex items-center justify-between
+         px-20 py-2
+         bg-white/80 dark:bg-gray-900/90
+         backdrop-blur-md
+         shadow-md
+         transition-all duration-500">
+
+  <!-- LOGO -->
+  <h1
+    class="text-3xl font-semibold
+           text-indigo-400
+           [text-shadow:0_0_8px_rgba(99,102,241,0.5),0_0_16px_rgba(99,102,241,0.3)]">
+    Portfolio
+  </h1>
+
+
+  <!-- MENU -->
+  <ul class="flex gap-12 font-regular text-sm mx-auto">
+
+    <!-- HOME -->
+    <li>
+      <a
+        href="#home"
+        [class.text-indigo-500]="activeSection === 'home'"
+        [class.border-b-2]="activeSection === 'home'"
+        [class.border-indigo-500]="activeSection === 'home'"
+        class="pb-1
+               text-gray-800 dark:text-gray-200
+               transition-all duration-300
+               hover:text-indigo-500">
+        HOME
+      </a>
+    </li>
+
+
+    <!-- ABOUT -->
+    <li>
+      <a
+        href="#about"
+        [class.text-indigo-500]="activeSection === 'about'"
+        [class.border-b-2]="activeSection === 'about'"
+        [class.border-indigo-500]="activeSection === 'about'"
+        class="pb-1
+               text-gray-800 dark:text-gray-200
+               transition-all duration-300
+               hover:text-indigo-500">
+        ABOUT
+      </a>
+    </li>
+
+
+    <!-- PROJECT -->
+    <li>
+      <a
+        href="#project"
+        [class.text-indigo-500]="activeSection === 'project'"
+        [class.border-b-2]="activeSection === 'project'"
+        [class.border-indigo-500]="activeSection === 'project'"
+        class="pb-1
+               text-gray-800 dark:text-gray-200
+               transition-all duration-300
+               hover:text-indigo-500">
+        PROJECT
+      </a>
+    </li>
+
+
+    <!-- SKILLS -->
+    <li>
+      <a
+        href="#skills"
+        [class.text-indigo-500]="activeSection === 'skills'"
+        [class.border-b-2]="activeSection === 'skills'"
+        [class.border-indigo-500]="activeSection === 'skills'"
+        class="pb-1
+               text-gray-800 dark:text-gray-200
+               transition-all duration-300
+               hover:text-indigo-500">
+        SKILLS
+      </a>
+    </li>
+
+
+    <!-- CONTACT -->
+    <li>
+      <a
+        href="#contact"
+        [class.text-indigo-500]="activeSection === 'contact'"
+        [class.border-b-2]="activeSection === 'contact'"
+        [class.border-indigo-500]="activeSection === 'contact'"
+        class="pb-1
+               text-gray-800 dark:text-gray-200
+               transition-all duration-300
+               hover:text-indigo-500">
+        CONTACT
+      </a>
+    </li>
+
+  </ul>
+
+
+  <!-- DARK MODE BUTTON -->
+  <button
+  (click)="toggleDarkMode()"
+  class="relative w-14 h-7
+         rounded-full
+         bg-gray-300 dark:bg-indigo-600
+         transition-all duration-300
+         shadow-inner
+         hover:scale-105">
+
+  <span
+    class="absolute top-1 left-1
+           w-5 h-5
+           rounded-full
+           bg-white
+           shadow-md
+           transition-transform duration-300
+           flex items-center justify-center
+           dark:translate-x-7">
+
+    <i
+      class="bx text-xs
+             transition-all duration-300"
+      [class.bx-moon]="!darkMode"
+      [class.bx-sun]="darkMode">
+    </i>
+
+  </span>
+
+</button>
+
+</nav>
